@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body {
+        width: 100%;
+        height: calc(100% - 20px);
+        margin: 0;
+        padding: 0;
+        background-color: #efefef;
+      }
+      a {
+        font-size: 12px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .textarea {
+        margin: 0 auto;
+        width: 50%;
+        height: 150px;
+        margin-top: 20px;
+      }
+      textarea {
+        padding: 10px;
+        list-style: none;
+        display: block;
+        width: calc(100% - 20px);
+        height: 100%;
+        outline: medium;
+        border-color: #ddd;
+        resize: none;
+      }
+      select {
+        outline: medium;
+        border-color: #ddd;
+        margin-top: 10px;
+      }
+      button {
+        display: inline-block;
+        float: right;
+        margin-top: 10px;
+        padding: 5px 10px;
+      }
+      .content {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #fff;
+        max-height: 500px;
+        overflow-y: auto;
+        margin-top: 100px;
+        /* background: ghostwhite; */
+      }
+      .item {
+        /* background: #efefef; */
+        margin: 10px 0;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        padding-top: 0;
+        margin-top: 0;
+      }
+      .name {
+        display: inline-block;
+        font-size: 16px;
+      }
+      .time {
+        font-size: 12px;
+        display: inline-block;
+      }
+      .item-content {
+        /* background: lightgray; */
+        padding: 5px 10px;
+        display: inline-block;
+        border-radius: 2px;
+        background-color: #efefef;
+        font-size: 14px;
+      }
+      .item.owner {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content" class="content">
+    </div>
+    <div class="textarea">
+      <textarea id="contentText" placeholder="..."></textarea>
+      <select id="userList">
+        <option>userName1</option>
+        <option>userName2</option>
+        <option>userName3</option>
+        <option>userName4</option>
+        <option>userName5</option>
+      </select>
+      <button id="submitButton" type="button">提交</button>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
