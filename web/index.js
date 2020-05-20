@@ -121,18 +121,18 @@ function loadData() {
     }
   })
 
-  ajax({
-    url:'/error',
-    type:'POST',
-    dataType:'json',
-    data: {},
-    success:function(result){
-      load(JSON.parse(result).data || [])
-    },
-    error:function(status){
-      console.error('获取列表失败')
-    }
-  })
+  // ajax({
+  //   url:'/error',
+  //   type:'POST',
+  //   dataType:'json',
+  //   data: {},
+  //   success:function(result){
+  //     load(JSON.parse(result).data || [])
+  //   },
+  //   error:function(status){
+  //     console.error('获取列表失败')
+  //   }
+  // })
 };
 
 (() => {
