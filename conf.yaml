@@ -1,0 +1,4 @@
+webServe:
+  webPath: ./web
+  port: 8080
+  saveFile: ./index.txt
